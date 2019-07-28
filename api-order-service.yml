@@ -21,12 +21,12 @@ spring:
     platform: mysql
     url: jdbc:mysql://localhost:3306/order?verifyServerCertificate=false&useSSL=false&requireSSL=false
     username: root
-      jpa:
-        database-platform: org.hibernate.dialect.MySQLDialect
-        generate-ddl: false
-        hibernate:
-          ddl-auto: create
-        show-sql: true
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: false
+    hibernate:
+      ddl-auto: create
+    show-sql: true
 
 authserver:
   hostname: http://localhost:9092
